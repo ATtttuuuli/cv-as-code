@@ -40,7 +40,7 @@ build-local:
 
 	@echo "→ [2/2] WeasyPrint : HTML → PDF..."
 	weasyprint \
-		--stylesheet=$(CSS) \
+		--stylesheet=$(CURDIR)/$(CSS) \
 		$(OUTPUT_DIR)/$(HTML_NAME) \
 		$(OUTPUT_DIR)/$(PDF_NAME)
 
