@@ -14,7 +14,7 @@ SRC         := src/cv.md
 TEMPLATE    := $(CURDIR)/template/cv.html
 CSS         := styles/cv.css
 
-.PHONY: all build build-local clean docker-build
+.PHONY: all build build-local clean
 
 all: build
 
@@ -30,17 +30,14 @@ build:
 build-local:
 	@echo "→ [1/2] Pandoc : Markdown → HTML intermédiaire..."
 	@mkdir -p $(OUTPUT_DIR)
-	cp $(TEMPLATE) $(CURDIR)/cv_template_tmp.html
 	pandoc $(SRC) \
-		--template=$(CURDIR)/cv_template_tmp.html \
+		--template=$(TEMPLATE) \
 		--standalone \
 		-t html5 \
 		-o $(OUTPUT_DIR)/$(HTML_NAME)
-	rm -f $(CURDIR)/cv_template_tmp.html
 
 	@echo "→ [2/2] WeasyPrint : HTML → PDF..."
 	weasyprint \
-		--stylesheet=$(CURDIR)/$(CSS) \
 		$(OUTPUT_DIR)/$(HTML_NAME) \
 		$(OUTPUT_DIR)/$(PDF_NAME)
 
