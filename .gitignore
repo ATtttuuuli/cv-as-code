@@ -1,7 +1,6 @@
 # Fichiers générés — jamais versionnés manuellement (critère éliminatoire)
 dist/
 *.pdf
-*.html
 
 # Python
 __pycache__/
