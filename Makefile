@@ -11,7 +11,7 @@ PDF_NAME    := cv-ali-benali.pdf
 HTML_NAME   := cv-ali-benali.html
 
 SRC         := src/cv.md
-TEMPLATE    := template/cv.html
+TEMPLATE    := ./template/cv.html
 CSS         := styles/cv.css
 
 .PHONY: all build build-local clean docker-build

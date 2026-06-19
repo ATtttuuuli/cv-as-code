@@ -1,0 +1,23 @@
+{
+	"folders": [
+		{
+			"path": "../cv-as-code"
+		},
+		{
+			"path": "../styles"
+		},
+		{
+			"path": "../template"
+		},
+		{
+			"path": "../.github"
+		},
+		{
+			"path": "../{src,template,styles,.github"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {}
+}
