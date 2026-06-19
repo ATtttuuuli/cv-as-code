@@ -1,0 +1,16 @@
+# Fichiers générés — jamais versionnés manuellement (critère éliminatoire)
+dist/
+*.pdf
+*.html
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Docker
+.dockerignore
+
+# OS
+.DS_Store
+Thumbs.db

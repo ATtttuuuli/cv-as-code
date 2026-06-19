@@ -1,0 +1,203 @@
+/* ============================================================
+   CV AS CODE — Feuille de style d'impression
+   Compatible WeasyPrint · Variables CSS · Zéro style inline
+   ============================================================ */
+
+/* --- Variables -------------------------------------------- */
+:root {
+  --color-bg:        #ffffff;
+  --color-surface:   #f7f7f8;
+  --color-border:    #e2e2e6;
+  --color-text:      #1a1a1e;
+  --color-muted:     #5a5a6e;
+  --color-accent:    #2563eb;
+  --color-accent-lt: #eff4ff;
+
+  --font-display: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-body:    Georgia, "Times New Roman", serif;
+  --font-mono:    "Courier New", Courier, monospace;
+
+  --size-base:   10.5pt;
+  --size-name:   22pt;
+  --size-title:  11pt;
+  --size-h2:     12pt;
+  --size-h3:     10.5pt;
+  --size-small:  9pt;
+
+  --space-xs:    2mm;
+  --space-sm:    4mm;
+  --space-md:    6mm;
+  --space-lg:    10mm;
+
+  --page-margin-v: 15mm;
+  --page-margin-h: 14mm;
+}
+
+/* --- @page ------------------------------------------------- */
+@page {
+  size: A4;
+  margin: var(--page-margin-v) var(--page-margin-h);
+}
+
+/* Évite les coupures orphelines sur les sections */
+@page :first {
+  margin-top: 10mm;
+}
+
+/* --- Reset ------------------------------------------------- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* --- Base -------------------------------------------------- */
+html {
+  font-size: var(--size-base);
+  color: var(--color-text);
+  background: var(--color-bg);
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+body {
+  font-family: var(--font-body);
+  line-height: 1.5;
+}
+
+/* --- En-tête ----------------------------------------------- */
+.cv-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: var(--space-sm);
+  border-bottom: 2px solid var(--color-accent);
+  margin-bottom: var(--space-md);
+  page-break-inside: avoid;
+}
+
+.cv-name {
+  font-family: var(--font-display);
+  font-size: var(--size-name);
+  font-weight: 700;
+  letter-spacing: -0.5pt;
+  color: var(--color-text);
+  line-height: 1.1;
+}
+
+.cv-title {
+  font-family: var(--font-display);
+  font-size: var(--size-title);
+  color: var(--color-accent);
+  font-weight: 400;
+  margin-top: var(--space-xs);
+}
+
+.cv-header__contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: var(--space-xs);
+  font-family: var(--font-display);
+  font-size: var(--size-small);
+  color: var(--color-muted);
+}
+
+/* --- Corps -------------------------------------------------- */
+.cv-body {
+  column-gap: var(--space-lg);
+}
+
+/* --- Titres de sections (h2) ------------------------------- */
+h2 {
+  font-family: var(--font-display);
+  font-size: var(--size-h2);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1pt;
+  color: var(--color-accent);
+  border-bottom: 0.5pt solid var(--color-border);
+  padding-bottom: var(--space-xs);
+  margin-top: var(--space-lg);
+  margin-bottom: var(--space-sm);
+  page-break-after: avoid;
+}
+
+/* --- Titres d'expériences (h3) ----------------------------- */
+h3 {
+  font-family: var(--font-display);
+  font-size: var(--size-h3);
+  font-weight: 700;
+  color: var(--color-text);
+  margin-top: var(--space-md);
+  margin-bottom: var(--space-xs);
+  page-break-after: avoid;
+}
+
+/* Sous-titre italique après h3 (le <em> / *...* en Markdown) */
+h3 + p > em:first-child {
+  display: block;
+  font-family: var(--font-display);
+  font-size: var(--size-small);
+  color: var(--color-muted);
+  font-style: italic;
+  margin-bottom: var(--space-xs);
+}
+
+/* --- Paragraphes ------------------------------------------- */
+p {
+  font-size: var(--size-base);
+  margin-bottom: var(--space-sm);
+}
+
+/* --- Listes ------------------------------------------------ */
+ul, ol {
+  padding-left: 4mm;
+  margin-bottom: var(--space-sm);
+}
+
+li {
+  font-size: var(--size-base);
+  margin-bottom: var(--space-xs);
+  page-break-inside: avoid;
+}
+
+/* --- Séparateur horizontal --------------------------------- */
+hr {
+  border: none;
+  border-top: 0.5pt solid var(--color-border);
+  margin: var(--space-md) 0;
+}
+
+/* --- Strong / em ------------------------------------------ */
+strong {
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+em {
+  color: var(--color-muted);
+}
+
+/* --- Code inline ------------------------------------------- */
+code {
+  font-family: var(--font-mono);
+  font-size: 9pt;
+  background: var(--color-surface);
+  padding: 0.5pt 2pt;
+  border-radius: 2pt;
+}
+
+/* --- Contrôle des sauts de page ---------------------------- */
+h2, h3 {
+  page-break-after: avoid;
+}
+
+ul, ol, p {
+  orphans: 3;
+  widows: 3;
+}
+
+section, .cv-section {
+  page-break-inside: avoid;
+}
