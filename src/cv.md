@@ -90,4 +90,3 @@ Spécialisation DevOps & Infrastructure
 
 - **Français** — Courant
 - **Anglais** — Technique (B2)
-- **Arabe** — Courant

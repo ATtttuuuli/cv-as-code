@@ -7,8 +7,8 @@
 # ============================================================
 
 OUTPUT_DIR  := dist
-PDF_NAME    := cv-ali-benali.pdf
-HTML_NAME   := cv-ali-benali.html
+PDF_NAME    := cv-ali-atrouche.pdf
+HTML_NAME   := cv-ali-atrouche.html
 
 SRC         := src/cv.md
 TEMPLATE    := $(CURDIR)/template/cv.html

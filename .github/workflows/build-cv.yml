@@ -36,12 +36,16 @@ jobs:
       - name: Upload PDF artifact
         uses: actions/upload-artifact@v4
         with:
-          name: cv-ali-benali
-          path: dist/cv-ali-benali.pdf
+          name: cv-ali-atrouche
+          path: dist/cv-ali-atrouche.pdf
           retention-days: 30
 
-      - name: Create GitHub Release on tag
-        if: startsWith(github.ref, 'refs/tags/')
+      - name: Create GitHub Release
+        if: github.ref == 'refs/heads/main'
         uses: softprops/action-gh-release@v2
         with:
-          files: dist/cv-ali-benali.pdf
+          tag_name: latest
+          name: "CV — Ali Atrouche"
+          files: dist/cv-ali-atrouche.pdf
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
