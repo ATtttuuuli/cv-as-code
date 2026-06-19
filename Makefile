@@ -30,11 +30,14 @@ build:
 build-local:
 	@echo "→ [1/2] Pandoc : Markdown → HTML intermédiaire..."
 	@mkdir -p $(OUTPUT_DIR)
+	cp $(TEMPLATE) $(CURDIR)/cv_template_tmp.html
 	pandoc $(SRC) \
-		--template=$(TEMPLATE) \
+		--template=$(CURDIR)/cv_template_tmp.html \
 		--standalone \
 		--metadata-file=$(SRC) \
+		-t html5 \
 		-o $(OUTPUT_DIR)/$(HTML_NAME)
+	rm -f $(CURDIR)/cv_template_tmp.html
 
 	@echo "→ [2/2] WeasyPrint : HTML → PDF..."
 	weasyprint \
