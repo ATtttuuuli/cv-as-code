@@ -34,7 +34,6 @@ build-local:
 	pandoc $(SRC) \
 		--template=$(CURDIR)/cv_template_tmp.html \
 		--standalone \
-		--metadata-file=$(SRC) \
 		-t html5 \
 		-o $(OUTPUT_DIR)/$(HTML_NAME)
 	rm -f $(CURDIR)/cv_template_tmp.html
