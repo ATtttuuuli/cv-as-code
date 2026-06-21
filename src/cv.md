@@ -82,7 +82,7 @@ API REST Spring Boot + MongoDB + Spring Security + JWT, conteneurisée Docker Co
 
 ### Bachelor Informatique — Ynov Campus Lyon
 *2023 — 2026 · Lyon*
-Spécialisation DevOps & Infrastructure
+Spécialisation DevOps & Infrastructures
 
 ---
 
