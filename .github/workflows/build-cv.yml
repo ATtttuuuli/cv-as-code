@@ -39,13 +39,3 @@ jobs:
           name: cv-ali-atrouche
           path: dist/cv-ali-atrouche.pdf
           retention-days: 30
-
-      - name: Create GitHub Release
-        if: github.ref == 'refs/heads/main'
-        uses: softprops/action-gh-release@v2
-        with:
-          tag_name: latest
-          name: "CV — Ali Atrouche"
-          files: dist/cv-ali-atrouche.pdf
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
