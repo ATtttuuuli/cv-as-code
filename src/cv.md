@@ -1,92 +1,113 @@
 ---
 name: "Ali ATROUCHE"
-title: "Étudiant B2 Informatique — DevOps & Infrastructure"
-email: "ali.atrouche@ynov.com"
-phone: "+33 6 00 00 00 00"
+title: "Devops & Infrastructure — Recherche alternance septembre 2026"
+email: "atroucheali3@gmail.com"
+phone: "+33 6 51 96 97 33"
 location: "Lyon, France"
-github: "github.com/ali-benali"
-linkedin: "linkedin.com/in/ali-benali"
+github: "github.com/ATttttuuulii"
+linkedin: "linkedin.com/in/ali-atrouche"
 ---
 
 ## Profil
 
-Étudiant en Bachelor 2 Informatique à Ynov Campus Lyon, spécialisation **DevOps & Infrastructure**.
-Je recherche une **alternance en infrastructure / DevOps ou cybersécurité** à partir de septembre 2026,
-sur un rythme 2 semaines entreprise / 1 semaine école.
+Étudiant en Bachelor Informatique 2ᵉ année à Ynov Campus Lyon, passionné par la data, les infrastructures Cloud et la cybersécurité.
+Je recherche une alternance en **Data Engineering, Data Analysis ou BI** à partir de septembre 2026
+pour contribuer à des projets analytiques dans un environnement technique exigeant.
+
+Rythme : 2 semaines entreprise / 1 semaine école.
 
 ---
 
-## Compétences
+## Compétences techniques
 
-### Infrastructure & DevOps
-- Docker, Docker Compose, Traefik, Portainer
-- Linux (Debian, Ubuntu), Windows Server 2025, Active Directory
-- Nginx (reverse proxy), Let's Encrypt, PM2
-- GitHub Actions, CI/CD, Gitea
-- Grafana, Prometheus, iptables
+### Data & Analyse
+- Python, SQL, Pandas, ETL, Power BI
 
-### Développement
-- Bash, Python, Go (Gin), Java (Spring Boot)
-- SQL (PostgreSQL, MySQL), MongoDB
-- C# (WPF, MVVM, Entity Framework Core)
+### Bases de données
+- PostgreSQL, MySQL, SQLite, MongoDB
 
-### Cybersécurité
-- CTF (HackTheBox) — SSTI, Prompt Injection
-- Sécurité réseau, hardening, nmap
-- JWT, authentification, OWASP
+### Infrastructure & Cloud
+- Docker, Linux, CI/CD, Traefik, TCP/IP
 
----
+### Systèmes & Réseaux
+- Windows Server, Active Directory, Cisco, Pare-feu
 
-## Expériences
+### Supervision & Sécurité
+- Grafana, InfluxDB, Zabbix, Hachage, SSO
 
-### Contributeur Scripts — INCA Project
-*2024 — présent · Lyon*
-
-Développement de scripts d'automatisation sous supervision de Noémie (team lead) :
-
-- Installateur automatique NetBird (Bash)
-- Système de backup/restore MySQL
-- Déployeur WordPress via Ansible
-- Intégration en templates V2 sur GitLab
-
-### Projet YMMO — Infrastructure Réseau Simulée
-*B2 INFRA & DEV · Ynov Campus Lyon*
-
-Simulation d'un réseau d'entreprise immobilière en équipe de 2 :
-
-- Active Directory, GPO, DHCP, SMB shares
-- Serveur web + BDD Dockerisé sous Debian 12
-- Environnement VMware Workstation
-
----
-
-## Projets
-
-### LogiClean — Pipeline ETL
-Pipeline n8n avec transformation Python/Pandas sur données tabulaires.
-
-### Groupie Tracker — API REST Go
-Application Go/Gin avec JWT, déployée en Docker, hébergée sur VPS.
-Monitoring : Grafana + Prometheus, réplication PostgreSQL master/slave, hardening iptables.
-
-### MediConnect — Architecture Technique (DAT)
-Document d'architecture technique pour une plateforme médicale fictionnelle.
-Stack : Docker, Traefik, Nextcloud, PostgreSQL, Google Workspace.
-
-### lets-play — API Spring Boot
-API REST Spring Boot + MongoDB + Spring Security + JWT, conteneurisée Docker Compose, poussée sur Gitea.
-
----
-
-## Formation
-
-### Bachelor Informatique — Ynov Campus Lyon
-*2023 — 2026 · Lyon*
-Spécialisation DevOps & Infrastructures
+### Langages & Web
+- JavaScript, PHP, Java, HTML5
 
 ---
 
 ## Langues
 
-- **Français** — Courant
-- **Anglais** — Technique (B2)
+- **Français** — Langue natale
+- **Kabyle** — Langue maternelle
+- **Anglais** — Courant (C1)
+
+---
+
+## Qualités & intérêts
+
+- Esprit d'équipe, autonomie et rigueur
+- Adaptabilité et curiosité intellectuelle
+- Veille en cybersécurité et challenges Capture The Flag
+- Contribution à des projets open source
+
+---
+
+## Formations
+
+### Bachelor Informatique — Ynov Campus Lyon
+*2024 — Présent · Lyon*
+
+### Baccalauréat Mathématiques — Mention Très Bien
+*2023 · Chouhada Mokrané, Algérie*
+
+---
+
+## Expériences professionnelles
+
+### Projet INCA — Déploiement automatisé d'infrastructure
+*Ynov YDays · octobre 2025 — Présent · Lyon*
+
+- Développement d'un script Bash d'installation automatisée déployant une homepage de services via Docker : téléchargement des dépendances, configuration des conteneurs et lancement de l'environnement en une seule commande.
+- Interface personnalisable selon les besoins utilisateur — chaque service (monitoring, reverse proxy, dashboards...) est sélectionné et déployé dynamiquement via le script.
+
+### Développeur Gameplay — Tales Run
+*Ynov YDays · octobre 2024 — juin 2025 · Lyon*
+
+- Conception des mécaniques de gameplay et interfaces utilisateur dans Unreal Engine 5, intégration d'actifs 3D en collaboration avec l'équipe artistique.
+- Participation aux cycles de tests et correction des anomalies pour garantir une expérience de jeu fluide.
+
+### Vendeur Conseil en Informatique
+*AC Multimedia · novembre 2024 — juillet 2025 · Lyon*
+
+- Conseil et accompagnement des clients, gestion des ventes, encaissements et suivi des stocks.
+
+---
+
+## Projets techniques
+
+### LogiClean — Automatisation ETL & Nettoyage de données
+*Python / n8n / CSV*
+
+- Pipeline d'automatisation n8n déclenchant un script Python de nettoyage de fichiers CSV : suppression des doublons, gestion des valeurs manquantes, normalisation des types et validation des données.
+- Implémentation des bonnes pratiques ETL avec Pandas (détection d'anomalies, standardisation des colonnes, export propre) et orchestration sans code via n8n.
+
+### Groupe Tracker — Plateforme Web & API
+*Go / HTML / JavaScript*
+
+- Consommation et structuration de données API REST, authentification par jetons sécurisés, tableau de bord temps réel via WebSockets, contrôle des droits d'accès.
+
+### Challenge 48h — Infrastructure Haute Disponibilité
+*Docker / GitHub Actions / OVH*
+
+- Déploiement d'une stack complète sur VPS OVH : conteneurisation des services, séparation des réseaux internes/exposés, monitoring des conteneurs.
+- Pipeline CI/CD GitHub Actions pour le déploiement automatisé, réplication base de données Master/Slave.
+
+### Forum Communautaire — Backend & BDD
+*Go / Gin / SQLite*
+
+- Conception du schéma de base de données relationnelle, requêtes SQL optimisées, séparation des privilèges utilisateurs et modération, sessions sécurisées.
